@@ -74,6 +74,7 @@ INSTALLED_APPS = [
     'user_sessions',
     'admin_honeypot',
     'honeypot',
+    'django_extensions',
 
     # Custom
     "User",

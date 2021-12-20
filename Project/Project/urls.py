@@ -5,6 +5,7 @@ from wagtail.documents import urls as wagtaildocs_urls
 from coderedcms import admin_urls as coderedadmin_urls
 from coderedcms import search_urls as coderedsearch_urls
 from coderedcms import urls as codered_urls
+from django.views.generic.base import TemplateView
 
 urlpatterns = [
     # Admin
@@ -19,6 +20,7 @@ urlpatterns = [
     path('search/', include(coderedsearch_urls)),
     path('account/', include('allauth.urls')),
     path('', include('user_sessions.urls', 'user_sessions')),
+    path('index/', TemplateView.as_view(template_name='base/base.html')),
 
     # For anything not caught by a more specific rule above, hand over to
     # the page serving mechanism. This should be the last pattern in
