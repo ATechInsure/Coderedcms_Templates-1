@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+coderedcms = "*"
+django-environ = "*"
+django-extensions = "*"
+django = {extras = ["argon2"], version = "*"}
+django-password-validators = "*"
+django-restricted-sessions = "*"
+geoip2 = "*"
+django-user-sessions = "*"
+django-xforwardedfor-middleware = "==2.0"
+django-admin-honeypot = "*"
+django-honeypot = "*"
+django-allauth = "*"
+django-ratelimit = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
